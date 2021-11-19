@@ -9,6 +9,7 @@
   padding-top: 35px;
   height: 95%;
   width: 100%;
+  max-width: 500px;
   border-radius: 12px;
   border-bottom-right-radius: 65px;
   position: relative;
@@ -73,7 +74,7 @@
 
 .arrowsY,
 .arrowsX {
-    background-color: black;
+    background-color: rgb(30, 30, 30);
     position: absolute;
     border-radius: 5px;
 }
@@ -82,11 +83,27 @@
     height: 80px;
     width: 30px;
     right: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
 }
 .arrowsX {
     height: 30px;
     width: 80px;
     top: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.arrow {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(60, 60, 60);
 }
 
 .inclinedBTNS {
@@ -122,6 +139,7 @@
     height: 12px;
     width: 40px;
     background-color: rgba(101, 84, 102, 1);
+    box-shadow: 2px 2px 3px rgb(95 95 95);
     border-radius: 35%;
 }
 
@@ -141,6 +159,7 @@
     height: 30px;
     width: 30px;
     background-color: rgba(126, 7, 70, 1);
+    box-shadow: -2px 2px 3px rgb(95 95 95);
     border-radius: 50%;
 }
 
