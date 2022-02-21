@@ -1,11 +1,11 @@
 .main {
-  background-image: url('../assets/images/main-back.jpg');
+  background-image: url("../assets/images/main-back.jpg");
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   @media screen and (min-width: 768px) {
     // background-color: #c3b2c4;
   }
@@ -39,6 +39,8 @@
 }
 
 .screen {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(121, 141, 116, 1);
   border: 1px solid;
   margin: auto;
@@ -68,7 +70,7 @@
   text-align: center;
 
   span {
-      font-weight: bold;
+    font-weight: bold;
   }
 }
 
@@ -80,6 +82,13 @@
 .answer {
   font-size: 0.8em;
   text-align: center;
+}
+
+.questions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
 }
 
 .question {

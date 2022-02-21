@@ -122,33 +122,34 @@ const GameBoy: NextPage<GameBoyProps> = ({ questions }) => {
               ) : step === "questions" ? (
                 <>
                   <div className={styles.info}>
-
-                  <p className={styles.screenText}>
-                    {questions[qNum].category}
-                  </p>
-                  <p className={styles.screenText}>
-                    difficulty: {questions[qNum].difficulty}
-                  </p>
-                  <p className={styles.screenText}>Points: {info.points}</p>
+                    <p className={styles.screenText}>
+                      {questions[qNum].category}
+                    </p>
+                    <p className={styles.screenText}>
+                      difficulty: {questions[qNum].difficulty}
+                    </p>
+                    <p className={styles.screenText}>Points: {info.points}</p>
                   </div>
 
-                  <p className={`${styles.screenText} ${styles.question}`}>
-                    {removeChars(questions[qNum].question)}
-                  </p>
-                  <ul className={styles.answers} ref={answerRef}>
-                    {allAnswers!.map((answer: string, index: number) => {
-                      return (
-                        <li
-                          className={`${styles.screenText} ${styles.answer} ${
-                            currentAnswer === index && styles.selectedAnswer
-                          }`}
-                          key={index}
-                        >
-                          {removeChars(answer)}
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <div className={styles.questions}>
+                    <p className={`${styles.screenText} ${styles.question}`}>
+                      {removeChars(questions[qNum].question)}
+                    </p>
+                    <ul className={styles.answers} ref={answerRef}>
+                      {allAnswers!.map((answer: string, index: number) => {
+                        return (
+                          <li
+                            className={`${styles.screenText} ${styles.answer} ${
+                              currentAnswer === index && styles.selectedAnswer
+                            }`}
+                            key={index}
+                          >
+                            {removeChars(answer)}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
                 </>
               ) : step === "message" ? (
                 <>
