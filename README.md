@@ -1,7 +1,7 @@
 # Blackbox Vision Challenge
 🌎 [letsplay.com](https://blackbox-vision-challenge-one.vercel.app/)
 
-### 🏀 A questions and answers game with different topics for questions and multiple or boolean choices for answers. <br> 
+### 🏀 A trivia game with different topics for questions and multiple or boolean choices for answers. <br> 
 📢 Are you able to answer 10 questions? <br>
 📢 You´ll get the category, dificulty, and current points for each question. <br>
 📢 You´ll earn 10 points for multiple choices questions and 5 points for booleans ones. In case of incorrect answers you won't get points.
