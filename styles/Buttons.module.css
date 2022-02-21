@@ -1,0 +1,108 @@
+/* BUTTONS */
+.buttons {
+  height: 30%;
+  width: 85%;
+  margin: 30px auto;
+  /* display: flex; */
+  position: relative;
+}
+
+.arrowBTNS {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.arrowsY,
+.arrowsX {
+  background-color: rgb(30, 30, 30);
+  position: absolute;
+  border-radius: 5px;
+}
+
+.arrowsY {
+  height: 80px;
+  width: 30px;
+  right: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.arrowsX {
+  height: 30px;
+  width: 80px;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(60, 60, 60);
+}
+
+.inclinedBTNS {
+  transform: rotate(-35deg);
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  right: -30px;
+  top: 45px;
+}
+
+.startSelect {
+  width: 90px;
+  height: 60px;
+  position: relative;
+}
+.startContainer,
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.startContainer {
+  bottom: 0;
+  right: 10px;
+}
+
+.startBTN,
+.selectBTN {
+  height: 12px;
+  width: 40px;
+  background-color: rgba(101, 84, 102, 1);
+  box-shadow: 2px 2px 3px rgb(95 95 95);
+  border-radius: 35%;
+}
+
+.abBTNS {
+  display: flex;
+  width: 115px;
+  justify-content: space-evenly;
+}
+
+.abContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abBTN {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(126, 7, 70, 1);
+  box-shadow: -2px 2px 3px rgb(95 95 95);
+  border-radius: 50%;
+}
+
+.buttonsText {
+  font-size: 0.9em;
+}

@@ -28,6 +28,10 @@ export const getStaticProps: GetStaticProps = async () => {
 const Home: NextPage = ({ questions }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
+      <Head> 
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="UTF-8" />
+      </Head>      
       <div className={styles.main}>
         <GameBoy questions={questions}/>
       </div>
